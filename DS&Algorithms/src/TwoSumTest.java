@@ -9,6 +9,7 @@ class TwoSumTest {
 	int[] a= { 20, 2, 5, 8, 1 };	
 	int[] b= { 2, 1, 5, 21, 20 };
 	int[] c= { 2, 2, 5, 8, 1 };
+	int[] d= {};
 	
 	@BeforeEach
 	public void setUp() throws Exception {
@@ -16,7 +17,13 @@ class TwoSumTest {
 		target = 10;
 	      
 	}
-	    
+	 
+	@Test
+	public void testShouldReturnZeroesForNull()
+	{
+		Assert.assertArrayEquals(new int[] {0, 0},t.twoSum(d, target));
+	}
+	
 	@Test
 	public void testShouldReturnNonZeroResult()
 	{
