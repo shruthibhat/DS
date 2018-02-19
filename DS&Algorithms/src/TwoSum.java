@@ -14,7 +14,8 @@ You may assume that each input would have exactly one solution.
 
 
 public class TwoSum {
-	public static int[] twoSum(int a[], int target)
+	
+	public int[] twoSum(int a[], int target)
 	{
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		
@@ -31,32 +32,5 @@ public class TwoSum {
 	}
 	
 	
-	public static void main(String args[])
-	{
-	
-		int[] a= { 20, 2, 5, 8, 1 };
-		int[] result1=TwoSum.twoSum(a, 10);
-		System.out.println("The result for array a= {2, 2, 5, 8, 1 }:");
-		for (int i=0;i< result1.length;i++)
-			System.out.print(result1[i]+" ");
-		
-		System.out.println();
-		
-		
-		int[]  b= { 2, 1, 5, 21, 20 };
-		int[] result2=TwoSum.twoSum(b, 10);
-		System.out.println("The result for array b= {1, 2, 5, 21, 20 }:");
-		for (int i=0;i< result2.length;i++)
-			System.out.print(result2[i]+" ");
-		
-		System.out.println();
-		
-		int[] c= { 2, 2, 5, 8, 1 };
-		int[] result3=TwoSum.twoSum(c, 10);
-		System.out.println("The result for array a= {2, 2, 5, 8, 1 }:");
-		for (int i=0;i< result3.length;i++)
-			System.out.print(result3[i]+" ");
-				
-	}
 
 }
