@@ -23,4 +23,13 @@ public class MergeTwoSortedArraysTest {
 		Assert.assertArrayEquals(new int[] {1,2,3,4,5,6,7,8,9,10},mergeTwoSortedArrays.mergeArrays(a, b));
 			
 	}
+	
+	@Test
+	public void shouldReturnZeroes() {
+		int[] x = null;
+		int[] y = null;
+		
+		Assert.assertArrayEquals(new int[] {0,0}, mergeTwoSortedArrays.mergeArrays(x, y));
+		
+	}
 }
