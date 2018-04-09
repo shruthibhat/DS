@@ -34,7 +34,7 @@ public class ValidateBST {
 		root.right.left = new Node(6);
 		root.right.right = new Node (8);
 		
-		System.out.println("The given tree is valid? : " +isValidBST(root));
+		System.out.println("Is given tree valid? : " +isValidBST(root));
 	}
 	
 	public static boolean isValidBST(Node root)
