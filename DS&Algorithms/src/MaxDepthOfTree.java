@@ -22,6 +22,9 @@ public class MaxDepthOfTree {
 		Node root1 = new Node (1);
 		System.out.println("The maximum depth of the given tree is: " + findMaxDepth(root1));
 		
+		Node root2 =null;
+		System.out.println("The maximum depth of the given tree is: " + findMaxDepth(root2));
+		
 	}
 	
 	public static int findMaxDepth(Node root)
