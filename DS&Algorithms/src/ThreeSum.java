@@ -23,9 +23,11 @@ public class ThreeSum {
 	public static void main(String[] args) {
 		int[] a = {0, -1, 2, -3, 1};
 		int[] b = {1, -2, 1, 0, 5};
+		int[] c = {1, -1, 5, 3, 0};
 		
 		findThreeSum(a);
 		findThreeSum(b);
+		findThreeSum(c);
 		
 
 	}

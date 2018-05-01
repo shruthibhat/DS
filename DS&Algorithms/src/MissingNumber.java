@@ -11,7 +11,7 @@ Input: [9,6,4,2,3,5,7,0,1]
 Output: 8
 
 
-Solution : Use n(n+!)/2 formula or bit manipulation, Time complexity = O(n)
+Solution : Use n(n+1)/2 formula or bit manipulation, Time complexity = O(n)
 													Space complexity = O(1)
 
  */
