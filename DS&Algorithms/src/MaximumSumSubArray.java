@@ -14,13 +14,14 @@ public class MaximumSumSubArray {
 
 	public static void main(String[] args) {
 		System.out.println("The maximum sum for the given array is : " + findMaxSum( new int[] {2, 1, -3, 4, -1, 2, 1, -5, 4}));
+		System.out.println("The maximum sum for the given array is : " + findMaxSum( new int[] {-2,5,-1,4,-3}));
 	}
 	
 	private static int findMaxSum(int[] nums) {
 		int maxSumSofar = nums[0];
 		int maxSum = nums[0];
 		
-		for (int i = 0 ;i < nums.length; i++) {
+		for (int i = 1 ;i < nums.length; i++) {
 			maxSumSofar = Math.max(maxSumSofar, maxSumSofar + nums[i]);
 			maxSum = Math.max(maxSum, maxSumSofar);
 		}

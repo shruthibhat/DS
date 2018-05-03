@@ -20,10 +20,23 @@ public class PickUpCoinsForGain {
 	}
 	
 	public static int pickUpCoins(int [] coins) {
-		return computeMaximumRevenuePerRange(coins, 0, coins.length -1, new int [coins.length][coins.length]);
+		int[][] matrix = new int[coins.length][coins.length];
+		int temp = computeMaximumRevenuePerRange(coins, 0, coins.length -1, matrix);
+		
+		for (int i =0;i< coins.length; i++) {
+			for (int j =0;j< coins.length; j++) {
+				System .out.print(matrix[i][j] + "  ");	
+			}
+			
+			System.out.println();
+			
+		}
+		
+		return temp;
 	}
 
 	private static int computeMaximumRevenuePerRange(int[] coins, int i, int j, int[][] ks) {
+		//If i is greater than j it is not valid 
 		if(i > j)
 			return 0;
 		if (ks[i][j] == 0) {
@@ -34,10 +47,8 @@ public class PickUpCoinsForGain {
 			int maxRevenueForJ= coins[j] + Math.min(computeMaximumRevenuePerRange(coins, i, j-2, ks),
 					computeMaximumRevenuePerRange(coins, i+1, j-1, ks)
 					);
-			ks[i][j] = Math.max(maxRevenueForI, maxRevenueForJ);
-			System .out.print(ks[i][j]);			
+			ks[i][j] = Math.max(maxRevenueForI, maxRevenueForJ);		
 		}	
-		System.out.println();
 		return ks [i][j];
 	}
 
