@@ -16,6 +16,7 @@ public class PickUpCoinsForGain {
 	public static void main(String[] args) {
 		
 		System.out.println("Maximum gain one can have for the given coin list is : " + pickUpCoins(new int[] {10,25,5,1,10,5}));
+		System.out.println("Maximum gain one can have for the given coin list is : " + pickUpCoins(new int[] {1,2,3,4}));
 		
 	}
 	

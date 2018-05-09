@@ -37,7 +37,7 @@ public class DutchFlag {
 
 		for (int i = 0; i < nums.size(); i++) {
 			if (nums.get(i) < index) {
-				Collections.swap(nums, small++, i);
+				Collections.swap(nums,small++, i);
 			}
 		}
 
