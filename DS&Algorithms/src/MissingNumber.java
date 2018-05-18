@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.stream.Stream;
+
 /*
  * Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
 
@@ -26,15 +29,17 @@ public class MissingNumber {
 	}
 
 	public int missingNumber(int[] nums) {
-		int actualSum = 0;
+		//int actualSum = 0;
 
 		// (n*(n+1))/2
 		int expectedSum = (nums.length * (nums.length + 1)) / 2;
+		
+		int sum = Arrays.stream(nums).sum();
+		
+		/*for (int i = 0; i < nums.length; i++)
+			actualSum += nums[i];*/
 
-		for (int i = 0; i < nums.length; i++)
-			actualSum += nums[i];
-
-		return expectedSum - actualSum;
+		return expectedSum - sum;
 	}
 
 }

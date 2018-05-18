@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * 
  * @author shruthi
- * 		   Write a program that takes an input an array of numbers and
+ * 		   Write a program that takes as input an array of numbers and
  *         returns the length of a longest nondecreasing subsequence in the
  *         array.
  *         

@@ -25,4 +25,24 @@ public class DenominationChange {
 		return nums;
 	}
 
+	
+	/*private static int change(int A) {
+		int result =0;
+		final int[] COINS = { 100, 50, 25, 10, 5, 1};
+		int i=0;
+	while (A > 0)
+	{
+	    while (A >= COINS[i])
+	    {
+	         A -= COINS[i];
+	       result++;
+	         
+	    }
+	    i++;
+	}
+
+	return result;
+	}*/
 }
+
+

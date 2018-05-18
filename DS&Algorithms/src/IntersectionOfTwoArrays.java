@@ -1,5 +1,6 @@
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collector;
 
 /****
  * 
@@ -39,6 +40,7 @@ public class IntersectionOfTwoArrays {
 			}
 		}
 
+
 		int[] result = new int[set2.size()];
 		int i = 0;
 		for (int n : set2) {
@@ -48,7 +50,6 @@ public class IntersectionOfTwoArrays {
 		}
 
 		return result;
-
 	}
 
 }
