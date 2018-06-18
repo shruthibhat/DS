@@ -30,7 +30,7 @@ public class ReverseSinglyLinkedList {
 		ListNode previous = null;
 		ListNode current = head;
 		if(head == null) {
-			System.out.println("Empty list, cannot be reveresed!");
+			System.out.println("Empty list, cannot be reversed!");
 		}
 		
 		while(current != null) {

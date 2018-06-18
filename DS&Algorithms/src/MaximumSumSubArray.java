@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.List;
+
 /***
  * 
  *		   @author shruthi
@@ -22,7 +25,7 @@ public class MaximumSumSubArray {
 		int maxSum = nums[0];
 		
 		for (int i = 1 ;i < nums.length; i++) {
-			maxSumSofar = Math.max(maxSumSofar, maxSumSofar + nums[i]);
+			maxSumSofar = Math.max(nums[i], maxSumSofar + nums[i]);
 			maxSum = Math.max(maxSum, maxSumSofar);
 		}
 		
