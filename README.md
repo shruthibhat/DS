@@ -1,2 +1,1 @@
-# DS
-Data Structures and Algorithms solved using Java
+# Data Structures and Algorithms using Java
